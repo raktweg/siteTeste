@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Meta Tags Obrigatórias-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+ -->
+
+	<!-- Link para baixar ícones de mídias sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+	<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+   	<title>Raktweg - Versão Modelo Inicial - com JS</title>
+
+
+   	<style>
+   		#menuLateral a:hover
+   		{
+   			background: #9370DB;
+   		}
+   		#menuLateral li:hover
+   		{
+   			background: #9370DB;
+   		}   		
+   	</style>
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<div style="background: ; text-align: center; border-bottom-style: solid;">
+		<img id="meuMenu" onclick="clicarImagem_visibilidade(this)"  src="img/menuSimbolo.png" style="width: 4%; background: ; float: left;">
+		<!-- Para tirar o MENU -->
+		<!-- <img id="meuMenu" onclick="clicarImagem_tirar(this)"  src="img/menuSimbolo.png" style="width: 4%; background: gold; float: left;"> -->
+		
+		<h1 style="color: #480080; font-size: 4vw;">
+			<b>RAKTWEG</b>
+			<a href="siteRaktWeg_equipe.html">
+				<img src="img/gdaeUFC.png" style="width: 4%; float: right;">
+			</a>
+		</h1>	
+	</div>
+
+	<!-- MENU LATERAL -->
+    <div style="background: ; float: left; width: 20%; font-size: 2.25vw;">
+		<div id="menuLateral">
+			<!-- <h2 style="font-size: 3vw;">Lista de Conteúdos</h2> -->
+				
+				<a href="siteRaktWeg_inicio.html" class="nav-link" style="color: black; float:  ;">
+					<img src="img/homeicon.svg" style="width: 15%;">
+						Início
+				</a>				
+				
+				<a href="siteRaktWeg_orbitando.html" class="nav-link" style="color: black; float:  ;">
+					<img src="img/saturn.png" style="width: 15%;">
+	    			Orbitando
+				</a>
+				
+				<a href="#" class="nav-link" style="color: black; float:  ;">
+					<img src="img/news.svg" style="width: 15%;">
+						Space News
+				</a>				
+				
+				<a href="siteRaktWeg_conteudos.html" class="nav-link" style="color: black; float:  ;">
+					<img src="img/books.svg" style="width: 15%;">
+	    			Conteúdos
+				</a>				
+
+				
+		</div>
+
+	</div>
+
+
+	<!-- CORPO PRINCIPAL -->
+	<div class="container-fluid" style="background: ; float: right; width: 80%; font-size: 2vw; border-left-style: solid; ">
+
+		<h1 style="background: ; font-size: 4vw; color: #480080;">
+			<b>Conteúdos</b>	
+		</h1>
+
+		<div id="divRecomendações">
+			<h2 style="font-size: 3vw; color: #480080;">Recomendações</h2>
+
+
+			<div id="demoSlides" class="carousel slide" data-ride="carousel" style="text-align: center;">
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#demoSlides" data-slide-to="0" class="active"></li>
+					<li data-target="#demoSlides" data-slide-to="1"></li>
+					<li data-target="#demoSlides" data-slide-to="2"></li>
+				</ul>
+
+				<!-- The Slide Show -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<a href="https://www.apogeerockets.com/" target="_blank">
+							<img src="img/apogeeComponents.png" style="width: 75%;">
+						</a>
+					</div>
+
+					<div class="carousel-item">
+						<a href="http://openrocket.info/" target="_blank">
+							<img src="img/openRocket.png" style="width: 75%;">
+						</a>
+					</div>
+
+					<div class="carousel-item">
+						<a href="https://www.nakka-rocketry.net/" target="_blank">
+							<img src="img/richardNakka.png" style="width: 75%;">
+						</a>
+					</div>
+				</div>
+
+				<!-- Left and Right Controls -->
+				<a class="carousel-control-prev" href="#demoSlides" data-slide="prev">
+					<!-- Coloca o ícone de setinha à esquerda -->
+					<!-- <span class="carousel-control-prev-icon"> -->
+						<img src="img/back-button.png" style="width: 10%;">
+					<!-- </span> -->
+				</a>
+				<a class="carousel-control-next" href="#demoSlides" data-slide="next" >
+					<!-- Coloca o item de setinha à direita -->
+					<!-- <span class="carousel-control-next-icon"> -->
+						<img src="img/right.png" style="width: 10%;">
+					<!-- </span> -->
+				</a>
+			</div>
+
+		</div>
+
+		<div id="divRepositorio" style="display: block;">
+			<button type="button" onclick="goVideos(this)" style="float: right;">
+				Trocar p/ Vídeos
+			</button>
+
+			<h2 style="font-size: 3vw; background: ; color: #480080; ">Repositório</h2>
+
+				<p>A <br>
+					<a href="http://livros01.livrosgratis.com.br/cp034496.pdf" target="_blank">Automatização aplicada a lançadores de foguetes - <i>Alexandre Garcia</i></a>
+				</p>
+
+				<p> B <br> 
+					<a href="https://www.apogeerockets.com/education/downloads/Newsletter198.pdf" target="_blank">Basic of Dynamic Flight Analysis - <i>Apogee Peak of Flight</i></a>
+				</p>
+				
+				<p>C <br> 
+					<a href="https://estesrockets.com/wp-content/uploads/Educator/TIR_33_Center_of_Pressure.pdf" target="_blank">Calculating the Center of Pressure of a Model Rocket- <i> Estes Educator </i></a>
+				</p>
+
+				<p>I <br> 
+					<a href="http://ftp.demec.ufpr.br/CFD/bibliografia/Palmerio-IAE-livro_2017.pdf" target="_blank">Introdução à Tecnologia de Foguetes- <i> Ariovaldo Felix Palmerio </i></a>
+				</p>
+		</div>
+
+		<div id="divVideos" style="display: none;">
+
+			<button type="button" onclick="goRepositorios(this)" style="float: right;">
+				Trocar p/ Repositório
+			</button>
+
+			
+			<h2 style="font-size: 3vw; color: #480080; ">Vídeos</h2>
+
+				<h3>RS E01: Princípio Básico de Funcionamento de um Foguete</h3>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/s1Ud6SmbtKY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				<h3>RS E02: The Nozzle</h3>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/4ClsQ9FfboE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>	
+	</div>
+	
+	<script>
+
+		function clicarImagem_visibilidade(elemento)
+		{
+			var minhaLista = document.getElementById('menuLateral');
+
+			//se estiver Escondido
+			if(minhaLista.style.visibility === 'hidden')
+			{
+				minhaLista.style.visibility = 'visible'	
+			}
+			//se não estiver escondido
+			else
+			{
+				minhaLista.style.visibility = 'hidden'
+			}
+		}
+
+		function clicarImagem_tirar(elemento)
+		{
+			var minhaLista = document.getElementById('menuLateral');
+
+			//var visibilidade = document.getElementById('').style.visibility;
+			//se estiver Escondido
+			if(minhaLista.style.display === 'none')
+			{
+				minhaLista.style.display = 'block'	
+			}
+			//se não estiver escondido
+			else
+			{
+				minhaLista.style.display = 'none'
+			}
+		}
+
+		function goVideos(elemento)
+		{
+			var meuRepositorio = document.getElementById('divRepositorio');
+			var meuVideo = document.getElementById('divVideos');
+
+			if(meuRepositorio.style.display === 'none')
+			{
+				meuRepositorio.style.display = 'block';	
+				meuVideo.style.display = 'none';	
+			}
+			
+			else 
+			{
+				meuRepositorio.style.display = 'none';	
+				meuVideo.style.display = 'block';	
+			}
+		}
+
+		function goRepositorios(elemento)
+		{
+			var meuVideo = document.getElementById('divVideos');
+			var meuRepositorio = document.getElementById('divRepositorio');
+
+			if(meuVideo.style.display === 'none')
+			{
+				meuVideo.style.display = 'block';	
+				meuRepositorio.style.display = 'none';	
+			}
+			
+			else 
+			{
+				meuVideo.style.display = 'none';	
+				meuRepositorio.style.display = 'block';	
+			}
+		}
+	</script>
+
+</body>
+</html>

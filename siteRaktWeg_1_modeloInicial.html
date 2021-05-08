@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Meta Tags Obrigatórias-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+ -->
+
+	<!-- Link para baixar ícones de mídias sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+	<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+   	<title>Raktweg - Versão Modelo Inicial</title>
+
+
+   	<style>
+   		#menuLateral a:hover
+   		{
+   			background: #9370DB;
+   		}
+   		#menuLateral li:hover
+   		{
+   			background: #9370DB;
+   		}   		
+   	</style>
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<div style="background: red; text-align: center; border-bottom-style: solid;">
+		<img id="meuMenu" onclick="clicarImagem_visibilidade(this)"  src="img/menuSimbolo.png" style="width: 4%; background: gold; float: left;">
+		<img id="meuMenu" onclick="clicarImagem_tirar(this)"  src="img/menuSimbolo.png" style="width: 4%; background: gold; float: left;">
+		
+		<h1 style="color: #480080; font-size: 4vw;">
+			<b>TÍTULO</b>
+		</h1>	
+	</div>
+	
+	<!-- MENU LATERAL -->
+    <div style="background: green; float: left; width: 20%; font-size: 2.25vw;">
+		<div id="menuLateral">
+			<h2 style="font-size: 3vw;">Lista de Conteúdos</h2>
+				
+				<a href="#" class="nav-link" style="color: black; float: right ;">
+					<img src="img/gdaeUFC.png" style="width: 15%; float: left;">
+						Item 1
+				</a>				
+				<a href="#" class="nav-link" style="color: black; float: right ;">
+					<img src="img/gdaeUFC.png" style="width: 15%; float: left;">
+						Item 2
+				</a>
+				<a href="#" class="nav-link" style="color: black; float: right ;">
+					<img src="img/gdaeUFC.png" style="width: 15%; float: left;">
+						Item 3
+				</a>				
+				<a href="#" class="nav-link" style="color: black; float: right ;">
+					<img src="img/gdaeUFC.png" style="width: 15%; float: left;">
+						Item 4
+				</a>				
+
+				
+		</div>
+
+		<br><br><br> 
+		<div id="lista1"></div>	
+		<div id="item1"></div>	
+		<div id="item2"></div>	
+		<div id="item3"></div>	
+		<div id="item4"></div>	
+		
+	</div>
+
+	<!-- CORPO PRINCIPAL -->
+	<div class="container-fluid" style="background: orange; float: right; width: 80%; font-size: 2vw;  border-left-style: solid;">
+		
+		<h1 style="background: ; color: #480080;font-size: 4vw; "> 
+			<b> COLOCAR CONTEUDO PRINCIPAL DA PÁGINA</b>
+		</h1>
+		
+		<br>Para mudar visibilidade da DIV: 
+		<button id="meuBotaoStarWars" type="button" onclick="visibilidadeDiv(this)">
+			Clique Aqui
+		</button>
+
+		<br>Para mudar tirar a DIV: 
+		<button id="meuBotaoStarWars2" type="button" onclick="tirarDiv(this)">
+			Clique Aqui
+		</button>
+
+		<ul id="novaLista">
+			<h2>Star Wars - Trilogia Clássica</h2>
+			<li>Star Wars - Episódio 4: </li> 
+			<li>Star Wars - Episódio 5: </li> 
+			<li>Star Wars - Episódio 6: </li> 
+		</ul>
+
+		<button id="botaoVader" type="button" onclick="clicarStarWars(this)">
+			Clique aqui p/ mudar posição da imagem
+		</button>
+		
+		<br>
+		<img id="imgStarWars_left" src="https://images.tcdn.com.br/img/img_prod/476855/adesivo_star_wars_logo_mod2_varias_cores_856_1_20180104164008.jpg" style="width: 45%; float: left; visibility: visible;">
+		<img id="imgStarWars_right" src="https://images.tcdn.com.br/img/img_prod/476855/adesivo_star_wars_logo_mod2_varias_cores_856_1_20180104164008.jpg" style="width: 45%; float: right; visibility: hidden;">
+
+		<br><br><br><br><br><br><br><br><br><br><br><br>  
+		<button id="meuBotaoFranquia" type="button" onclick="trocarFranquia(this)">
+			Clique Aqui p/trocar imagem da Série
+		</button>
+
+		<br>
+		
+		<img id="myImg_LOTR" src="https://upload.wikimedia.org/wikipedia/pt/0/0c/The_Lord_of_the_Rings_logo.png" style="width: 50%; display: block;">
+
+		<img id="myImg_HP" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSszrdSSY5-Yrt5U1sIeGrCFEtdnHpQ2MYeQ&usqp=CAU" style="width: 50%; display: none;">
+
+
+
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+	
+
+	<!-- Espaço para o JavaScript -->
+	<script>
+		/*
+		Referencia em:
+		https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_style_visibility_toggle
+		*/
+
+		function visibilidadeDiv(elemento)
+		{
+			var minhaLista = document.getElementById('novaLista');
+
+			//var visibilidade = document.getElementById('').style.visibility;
+			//se estiver Escondido
+			if(novaLista.style.visibility === 'hidden')
+			{
+				novaLista.style.visibility = 'visible'	
+			}
+			//se não estiver escondido
+			else
+			{
+				novaLista.style.visibility = 'hidden'
+			}
+		}
+
+		function tirarDiv(elemento)
+		{
+			var minhaLista = document.getElementById('novaLista');
+
+			//var visibilidade = document.getElementById('').style.visibility;
+			//se estiver Escondido
+			if(novaLista.style.display === 'none')
+			{
+				novaLista.style.display = 'block'	
+			}
+			//se não estiver escondido
+			else
+			{
+				novaLista.style.display = 'none'
+			}
+		}
+		
+		function clicarImagem_visibilidade(elemento)
+		{
+			var minhaLista = document.getElementById('menuLateral');
+
+			//se estiver Escondido
+			if(minhaLista.style.visibility === 'hidden')
+			{
+				minhaLista.style.visibility = 'visible'	
+			}
+			//se não estiver escondido
+			else
+			{
+				minhaLista.style.visibility = 'hidden'
+			}
+		}
+
+		function clicarImagem_tirar(elemento)
+		{
+			var minhaLista = document.getElementById('menuLateral');
+
+			//var visibilidade = document.getElementById('').style.visibility;
+			//se estiver Escondido
+			if(minhaLista.style.display === 'none')
+			{
+				minhaLista.style.display = 'block'	
+			}
+			//se não estiver escondido
+			else
+			{
+				minhaLista.style.display = 'none'
+			}
+		}
+
+		function clicarStarWars(elemento)
+		{
+			var minhaImagem_esq = document.getElementById('imgStarWars_left');
+			var minhaImagem_dir = document.getElementById('imgStarWars_right');
+
+			if (minhaImagem_dir.style.visibility === 'hidden') 
+			{
+				minhaImagem_dir.style.visibility = 'visible';		
+				minhaImagem_esq.style.visibility = 'hidden';			
+			}
+			else
+			{
+				minhaImagem_dir.style.visibility = 'hidden';		
+				minhaImagem_esq.style.visibility = 'visible';			
+			}
+		}
+
+		function trocarFranquia(elemento)
+		{
+			var minhaImagem_LOTR = document.getElementById('myImg_LOTR');
+			var minhaImagem_HP = document.getElementById('myImg_HP');
+
+			if (minhaImagem_HP.style.display === 'none') 
+			{
+				minhaImagem_HP.style.display = 'block';		
+				minhaImagem_LOTR.style.display = 'none';			
+			}
+			else
+			{
+				minhaImagem_HP.style.display = 'none';		
+				minhaImagem_LOTR.style.display = 'block';			
+			}
+		}
+	</script>
+
+
+</body>
+</html>
