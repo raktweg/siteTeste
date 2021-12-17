@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste estático do motor de foguete </title>
+	<meta charset="utf-8">
+
+	<title>Bootstrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="Raktweg.css">
+	
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	 <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome link -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+
+
+<body bgcolor="99cccc" cz-shortcut-listen= "true">
+	<hr size="5">
+
+	<h2>
+		<center>
+			Site da Web de <em>foguetes experimentais</em> do Richard Nakka
+		</center>
+	</h2>
+	<hr width="50%" align="center" size="2">
+	<br>
+
+	<center>
+		<a href="#">
+			<img class="imagemprincipal" src="imagens\PARTE 1\Teste de motor.jpg" width="65px" height="65px">
+		</a>
+		<h2>Teste estático do motor de foguete</h2>
+		<table border="1">
+			<tbody>
+				<tr>
+					<td>
+						<li>
+							<a href="#intro">Introdução</a>
+						</li>
+						<li>
+							
+							<a href="#thrustometer">Thrusmeter</a>
+						</li>
+						<li>
+							
+							<a href="#thrustograph">Thrustograph</a>
+						</li>
+						<li>
+							
+							<a href="#rig">Equipamento de teste estático</a>
+						</li>
+						<li>
+							
+							<a href="#sts5000">STS-5000 Plataforma de Teste Estático</a>
+						</li>
+						<li>
+							
+							<a href="#impulso">Impulso Total e Impulso Específico</a>
+						</li>
+						<li>
+							
+							<a href="#pressao">Pressão da Câmara, C-estrela e Coeficiente de Empuxo</a>
+
+						</li>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+
+	<hr width="50%" size="2">
+
+	<table border="0" width="93%" cellpadding="50">
+		<tbody>
+			<tr>
+				<td>
+					<a name="intro">
+						<h3>
+							<font color="brown">Introdução</font>
+						</h3>
+					</a>
+					<p>
+						<strong>Uma coisa é desenvolver um motor de foguete que produza um empuxo útil</strong>, outra é saber <em>quanto</em> empuxo é gerado. Qual é a forma da curva real do impulso- tempo? O empuxo é constante durante a queima ou varia muito? E a pressão da câmara? A pressão máxima da câmara está próxima do limite estrutural do motor? Qual é o empuxo total produzido? Como o desempenho <em>real</em> (medido) se compara ao <em>teórico</em> (design)? Em minhas tentativas de responder a essas perguntas sobre os motores de foguete que desenvolvi ao longo dos anos, vários dispositivos foram concebidos. Nesta página da web, apresento uma visão geral cronológica deles. 
+					</p>
+					<p> 
+						Medir o empuxo real e a pressão da câmara ao longo da duração da queima pode fornecer informações valiosas, não apenas sobre o desempenho dos motores, mas também do propelente. Apresentados são os meios para derivar Impulso Total, Impulso Específico, C-estrela e Coeficiente de Empuxo a partir dos dados de teste. Estes são alguns dos principais parâmetros relacionados ao desempenho de um motor de foguete sólido e propelente. 
+					</p>
+					<hr width="30%">
+					<a name="thrustometer">
+						<h3>
+							<font color="brown">Thrustometer (Medidor de empuxo)</font>
+						</h3>
+					</a>
+					<p>
+						Um dos primeiros motores de foguete de sucesso que desenvolvi foi o que usei para meu primeiro vôo de foguete amador. Isso foi em 1972. Esse motor era relativamente pequeno, com cerca de 1,8 cm de diâmetro por cerca de 22 cm de comprimento. Era baseado em um motor semelhante, mas mais curto, que <em> parecia</em> desenvolver empuxo útil, a julgar pelo curto tempo de queima (cerca de um segundo) e pelo som assustadoramente alto (pelo menos em comparação com os motores de foguete modelo que eu estava familiarizado!). Mas agora que o motor parecia ser poderoso, como eu poderia descobrir o quão poderoso ele era - qual empuxo ele realmente desenvolveu? Já que o empuxo é uma força, assim como o peso, por que não usar uma balança? Portanto, meu primeiro teste estático consistia em uma escala de capacidade de 25 lb (11 kg) contra a qual o motor pressionaria. Denominei essa engenhoca de "thrustometer" (Figura 1). Eu tinha simplesmente prendido um pedaço de grafite ao mostrador, que escreveria sob uma folha de papel colada na face da escala. Como o mostrador giraria sob carga, ele criaria um arco. Dessa forma, o empuxo máximo foi registrado. Este "thrustometer" funcionou surpreendentemente bem, e foi usado para mais de uma dúzia de testes estáticos. Ele finalmente encontrou seu fim um dia, quando um motor de teste acumulou pressão excessiva, quebrou o pino de segurança e estourou o plugue final. O "empuxo” resultante estava bem além da capacidade da escala e quebrou o dial! 
+					</p>
+					<br>
+					<center>
+						<img src="imagens\PARTE 1\Thrustometer.gif">
+						<p>
+						Figura 1 - Thrustometer usado para testes estáticos anteriores. 
+						</p>
+					</center>
+					<hr width="30%">
+					<a name="thrustograph">
+						<h3>
+							<font color="brown"> Thrustograph (Medidor de curva empuxo-tempo)</font>
+						</h3>
+					</a>
+					<p>
+						Em certo sentido, a morte do thrustometer foi oportuna. Gravar o empuxo máximo foi um grande passo na direção certa, e o tempo de queima pôde ser estimado a partir de uma gravação em fita do disparo. No entanto, não havia como dizer qual era a <em>forma</em> da curva de empuxo do tempo (função de empuxo). Isso era igualmente importante saber, uma vez que o impulso total do motor é basicamente a área sob a curva de empuxo de tempo. O quão alto um foguete vai voar depende do impulso total e do formato particular da curva de empuxo-tempo, e não do empuxo máximo. Da mesma forma, é necessário conhecer o impulso total produzido para determinar o <em>impulso</em> específico real do propelente. Um tipo de instrumento usado para registrar uma função variável no tempo (como a produzida por um motor de foguete) é um <em>registrador gráfico</em>. Decidi construir minha própria versão de tal dispositivo, que mediria o impulso diretamente e durante toda a duração da queimadura. Cunhei este aparelho que construí (com a ajuda do meu irmão) um "thrustgraph", que é mostrado na Figura 2.
+					</p>
+
+					<p></p>
+
+					<center>
+						<img src="imagens/Parte 1/Thrustograph.jpg">
+					<br>
+					<p>
+						Figura 2 - Thrustograph em ação - disparo estático do motor B-II, 28/12/1972
+					</p>
+					<a href="#">
+						<em>
+						<font size="-1">Clique para detalhes</font>
+						</em>
+					</a>
+					</center>
+					
+					<p>
+						O motor do foguete foi montado horizontalmente em um trenó que podia se mover para frente por uma curta distância (sob o empuxo do motor) ao longo de um conjunto de trilhos. O trenó era contido por um par de poderosas molas de extensão. Preso ao trenó estava um braço, que estava preso em sua outra extremidade a um porta-canetas. A caneta era segura de forma que a ponta ficasse em contato com uma folha de papel para registro em cima da mesa do thrustograph. Esse papel de registro (que era armazenado em forma de rolo) avançava ao longo da mesa do thrustograph por meio de um mecanismo de alimentação, que consistia em um par de rolos de aço dotados de anéis de borracha, entre os quais o papel era alimentado. Esses rolos eram acionados por um motor elétrico de 120 V (forno) girando a 1720 RPM. A velocidade de rotação dos rolos foi reduzida, no entanto, por meio de uma série de correias e polias de forma que a taxa de alimentação do papel fosse 4,5 polegadas por segundo (11.4 cm/s). 
+					</p>
+
+					<p>
+						Pouco antes de acionar o motor, a alimentação de papel foi ativada. Quando o motor disparou, o empuxo superou a força da mola e avançou. A distância real que o trenó se moveria foi determinada pela constante da mola (rigidez). Normalmente, as molas foram selecionadas de modo que o movimento máximo não fosse maior do que cerca de 6 polegadas (15 cm). A largura do papel era de 8,5 polegadas (21,6 cm). O movimento do trenó combinado com a alimentação do papel sobre a mesa fazia com que a caneta traçasse uma curva que correspondia à curva de impulso-tempo do motor. Um exemplo de tal gráfico é mostrado na Figura 3.
+					</p>
+					<br>
+					<center>
+						<img src="imagens\PARTE 1\rascunho.jpg">
+						<p>
+							Figura 3 - Exemplo de plotagem obtida no Thrustograph (força ao longo do eixo vertical, tempo ao longo do eixo horizontal). 
+						</p>
+					</center>
+
+					<p>
+						A calibração das molas foi feita por um de dois métodos. Um par de escalas de pescador de 50 lb. de capacidade (cada) foi usado para estender as molas do thrustograph por uma certa distância (d) e observando a força total (F) necessária, a constante da mola (k) foi determinada (k = F / d). O segundo método consistia simplesmente em remover as molas do thrustograph e pendurar pesos na extremidade, e medir o deslocamento para obter a constante da mola. Esses métodos eram bons para motores de, digamos, menos de 200 lbs (900 N.) de empuxo, mas eram impraticáveis para molas de maior rigidez. No geral, o thrustograph funcionou bem e foi usado para muitos testes estáticos. Sua principal limitação, entretanto, era que era praticamente limitado a motores de empuxo relativamente baixo (<200 libras). Ajustar o dispositivo com molas mais fortes, que seriam necessárias para motores de várias centenas de libras de empuxo, parecia estar além dos limites práticos do thrustograph. Claramente, parecia necessário conceber um equipamento de teste estático mais universal que fosse adequado para motores de praticamente qualquer tamanho e potência. 
+					</p>
+					<hr width="30%">
+
+					<a name="rig">
+						<h3>
+							<font color="brown">
+								Equipamento de teste estático 
+							</font>
+						</h3>
+					</a>
+
+					<p>
+						A construção da plataforma de teste estática (como passei a chamá-la) foi iniciada no início de 1982. Este dispositivo foi construído como um substituto para o thrustograph e, de construção robusta, foi concebido como uma ferramenta que teria a capacidade de manusear motores de foguete de empuxo muito maior do que seu antecessor jamais poderia controlar. O princípio de como esse dispositivo funcionava era significativamente diferente - em vez de traçar diretamente a curva de empuxo-tempo, como fazia o thrustograph, esse dispositivo converteria o empuxo em um sinal eletrônico que seria coletado e processado por um <a href="#">computador</a>. No coração do sistema estava um transdutor de força, recuperado de uma balança digital de banheiro. Esta era essencialmente uma pequena viga cantilever equipada com quatro medidores de tensão. Quando o feixe foi desviado, os medidores de tensão sofreram uma mudança na resistência elétrica. Um <a href="#">circuito de condicionamento</a> converteria isso em uma mudança de voltagem, e um circuito conversor analógico-digital (A / D) converteria isso em um sinal binário, que era lido por computador e armazenado em fita digital, para pós-processamento. A taxa de amostragem do sinal foi de generosas 580 amostras por segundo. 
+					</p>
+					<table border="0" width="94%" height="50" cellpadding="7CELLSPACING=5">
+						<tbody>
+							<tr>
+								<td>
+									<img src="imagens/PARTE 1/motor.gif">
+								</td>	
+								<td>
+									O motor do foguete foi montado verticalmente, com o bico voltado para cima, em um <strong>suporte</strong> tubular . A parte inferior do suporte assentava sobre uma <strong>barra de deflexão</strong> que funcionava como uma viga apoiada em ambas as extremidades, com a carga (empuxo do motor) agindo para baixo no meio da viga (<a href="#">detalhe</a>).O transdutor de força foi montado de forma que sua extremidade estivesse em contato com a barra de deflexão próxima ao meio. Como o motor dispararia, o impulso forçaria a barra de deflexão a desviar para baixo e, ao fazer isso, desviaria também o feixe do <a href="#">transdutor de força</a>.
+								</td>
+							</tr>
+						</tbody>	
+					</table>
+					<p>
+						A deflexão foi geralmente limitada a cerca de 0,25 polegada (6,4 mm) e, portanto, a barra foi selecionada de modo que sua rigidez sob o empuxo máximo não excedesse esse limite. Um "batente" foi instalado sob a barra de deflexão para limitar fisicamente a deflexão, a fim de evitar danos à barra e ao transdutor de força em caso de empuxo excessivo ou explosão. A estrutura de suporte da plataforma era de construção pesada <strong>em viga I</strong> equipada com três pernas tubulares soldadas às extremidades da viga. 
+					</p>
+					<p>
+						Durante uma tentativa de teste da plataforma com cargas simuladas aplicadas, verificou-se que a oscilação era um problema significativo. Em vez da curva suave que era esperada, a curva estava cheia de oscilações de alta frequência, como resultado de ser altamente <a href="#">subamortecida</a> , bem como uma mola que oscilaria para cima e para baixo se um peso pesado fosse suspenso dela. Depois de muita consideração (incluindo a possibilidade de eliminar a oscilação por meio de software), decidiu-se projetar e construir um <a href="#">dispositivo de amortecimento hidráulico</a> que seria acoplado à barra de deflexão. O amortecedor foi feito de forma que a quantidade de amortecimento pudesse ser facilmente ajustada, conforme necessário.
+					</p>
+					<p>
+						A barra de deflexão escolhida com base na deflexão em seu meio vão, devido ao empuxo máximo do motor. A deflexão é dada por: 
+					</p>
+					<center>
+						<img src="">
+					</center>
+
+					<p>
+						onde y = deflexão no meio do vão, F = força de empuxo do motor, L = comprimento da barra, E = módulo de elasticidade da barra, b = largura da barra, d = espessura da barra.
+					</p>
+
+					<p>
+						A calibração da bancada de teste estático foi realizada com o auxílio de um braço de calibração com vários pesos pendurados em sua extremidade. O braço efetivamente amplia a força devida aos pesos, sendo esta força aplicada no meio do vão da barra de deflexão (onde atua o empuxo do motor), conforme mostrado na Figura 6. 
+					</p>
+					<center>
+						<img src="">
+					</center>
+					<p>
+						Figura 6 - Configuração do braço de calibração. F = força aplicada à barra de deflexão, W = peso preso ao final do braço de calibração, Wa = peso do braço de calibração 
+					</p>
+					<p>
+						<em>
+							<a href="#">Exemplo</a> de curva de impulso-tempo a partir de dados obtidos usando o equipamento de teste estático.
+						</em>
+					</p>
+
+					<hr width="30%">
+
+					<a name="sts5000">
+						<h3>
+							<font color="brown">
+								STS-5000 Static Test Stand (Plataforma de Teste Estático)
+							</font>
+						</h3>
+					</a>
+
+					<p>
+						O equipamento de teste estático funcionou razoavelmente bem, mas tinha algumas desvantagens. A necessidade de um amortecedor para evitar oscilações era uma desvantagem, mas, mais importante, era um inconveniente ter que mudar o feixe para se adequar a diferentes motores de diferentes níveis de empuxo. Talvez sua maior desvantagem seja a falta de portabilidade. Era pesado e difícil de transportar. Em 2000, eu precisava de uma bancada de teste para disparar meu motor de foguete sólido <a href="#">Kappa</a> (classe K) recém-projetado . Então, comecei a projetar um. A portabilidade foi uma consideração importante. Assim como o desejo de acomodar uma <em>célula de carga</em> para medição de empuxo. Essa célula de carga pode ser hidráulica ou eletrônica. O resultado deste esforço foi o STS-5000 Static Test Stand. Esta bancada de teste foi projetada para testar motores com um impulso máximo de até 5.000 Newtons (1100 lbs.). A construção básica do <strog>STS-5000 Static Test Stand</strog> é um tripé feito de tubos de metal presos por parafusos. Era muito leve, forte e rígido, de baixo custo e podia ser facilmente desmontado para transporte e instalação em campo. Agora, 20 anos depois, ainda uso o suporte de teste estático STS-5000 para teste de desempenho de quase todos os meus novos motores. 
+					</p>
+
+					<p>
+						<em>
+							<strong>Clique para obter os detalhes completos:</strong>
+						</em>
+						<a href="#"> página da web do STS-5000 Static Test Stand </a>
+					</p>
+					<p></p>
+					<center>
+						<img src="imagens\PARTE 1\Foto 1.jpg" width="309" height="334">
+						&nbsp
+						<img src="imagens\PARTE 1\Foto 2.jpg" width="309" height="334">
+						<br>
+						<u>Esquerda</u>: Bancada de teste STS-5000 para teste estático KDX-002 (julho de 2000)
+						<br>
+						<u>Direita</u>: Bancada de teste STS-5000 para teste estático de motor experimental
+						<em>Impulser-B (maio de 2020)</em>
+					</center>
+					<hr width="30%">
+					<a name="impulso">
+						<h3>
+							<font color="brown">Impulso Total e Impulso Específico </font>
+						</h3>
+					</a>
+					
+					<p> A medição do <strog>empuxo</strog> de um motor de foguete fornece informações importantes que podem ser usadas para determinar a que altura e a velocidade de um foguete. Mas muito mais do que isso, os dados de empuxo podem ser usados para calcular o <em>Impulso Total</em> e o <em>Impulso Específico</em>. Conhecer os valores reais "entregues" desses dois parâmetros-chave do desempenho do motor de foguete permite uma comparação com os valores do projeto. Em particular, esses dois parâmetros informam o experimentador sobre o quão bem se saiu a <strong>combinação do motor e do propelente</strong>. Por exemplo, se o Impulso Específico fornecido for significativamente menor do que o esperado, a causa pode ser uma deficiência relacionada ao projeto do motor (como um bico ineficiente) ou uma deficiência no propelente (como foi preparado). Medir o Impulso Total e o Impulso Específico também permite que o experimentador avalie o efeito de fazer modificações no motor ou propelente. Para investigar novas formulações de propelente, o Impulso Específico fornecido dispõe de uma indicação direta de desempenho. 
+					</p>	
+
+					<center>
+						<em>
+							<strong>Clique para obter os detalhes completos:</strong>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+						</em>
+						<a href="#">Determinação do Impulso Total e Específico dos Dados de Teste </a>
+					</center>	
+					<hr width="30%">
+					<a name="pressao">
+						<h3>
+							<font color="brown">Pressão da Câmara, C-estrela e Coeficiente de Impulso</font>
+						</h3>
+					</a>
+
+					<p> 
+						Medir a pressão da câmara do motor do foguete durante um disparo estático fornece informações importantes sobre o desempenho do motor que são de valor igual ao da medição de empuxo. O valor evidente da medição de pressão é a oportunidade de fazer uma comparação entre o projeto e a pressão medida na câmara. Por que a pressão medida na câmara é mais alta (ou mais baixa) do que o esperado? A pressão aumenta e diminui conforme o esperado? Ter dados concretos permite ao experimentador fazer uma investigação racional sobre o motivo da discrepância. A aceleração lenta geralmente é uma consequência do dispositivo de ignição de baixa potência. Um período de fuga prolongado pode significar que houve ignição retardada de algumas regiões da superfície do propelente. A pressão geral mais baixa da câmara está frequentemente relacionada a algum aspecto particular da preparação do propelente, como o tamanho da partícula do oxidante. 
+					</p>
+
+					<p>
+						Existem dois parâmetros de desempenho adicionais que podem ser derivados da medição da pressão da câmara - Velocidade característica, geralmente referida como <em>c-star</em> , e <em>coeficiente de empuxo</em>. C-star é uma figura de mérito termoquímico para um determinado propelente e é indicativo de eficiência de combustão. C-star pode ser calculado a partir dos valores medidos de pressão da câmara e comparado ao valor teórico, normalmente obtido do <a href="#">ProPEP</a> ou um programa de avaliação de propelente semelhante. O coeficiente de empuxo, que é um fator que relaciona a pressão da câmara e o empuxo, pode ser calculado usando os valores medidos desses dois parâmetros. O coeficiente de empuxo revela ao experimentador quão bem o bico "amplifica" o empuxo que seria obtido se o bico fosse um orifício simples. 
+
+					</p>
+					<p>
+						Outro benefício de medir a pressão da câmara é que os dados podem ser usados  para obter uma estimativa razoavelmente boa do empuxo do motor, se o empuxo não estiver sendo medido diretamente. Como a pressão da câmara e o empuxo são diretamente proporcionais, relacionados pelo coeficiente de empuxo e área da garganta (ambos podem ser considerados constantes), uma estimativa preliminar do empuxo ao longo da duração total da queima pode ser obtida.
+						<br>
+						<img src="imagens/PARTE 1/equacão.png" width="115" height="31" align="middle">
+						<br>
+						Nesta equação, o empuxo (F) corresponde à pressão medida (Po) é obtido pela multiplicação do coeficiente de pressão pelo impulso (Cf) e da área de secção transversal da garganta (A<sub>t</sub>). Para um bico de aço bem projetado e razoavelmente bem feito <sup>[1]</sup> o coeficiente de empuxo pode ser considerado conservadoramente como Cf = 1,5 para o propelente de açúcar. A área da garganta é obtida a partir do diâmetro medido. Medir somente a pressão da câmara é uma boa estratégia para novos projetos de motores, pois evita a destruição potencial de uma célula de carga cara se o motor sofrer uma excessiva pressurização e seu o bico ou anteparo explodir. 
+
+					</p>
+					<p></p>
+					<center>
+						<em>
+							<strong>Clique para obter os detalhes completos:</strong>
+						</em>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#">Medição da pressão da câmara e determinação do C-star e do coeficiente de empuxo</a>
+					</center>
+
+					<p>
+						<font size="-1">
+							[1] pressão de operação de 1000 psi; 30<sup>o</sup> meio-ângulo convergente; 12<sup>o</sup> meio-ângulo divergente; taxa de expansão > 8 ;
+						</font>
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<hr width="50%" align="center" size="2">
+
+	<center>
+		<img src="imagens/PARTE 1/trequinho.gif">
+	</center>
+
+	<center>
+		<h6>
+			<br>
+			Última atualização em 14 de maio de 2020 
+			<p>Retirado da <a href="http://www.nakka-rocketry.net/static.html">página oficial</a> do Site de foguetes experimentais do Richard Nakka</p>
+		</h6>
+	</center>
+
+	<center>
+		<a name="Voltar à página inicial"></a>
+		<a href="#">
+			<font size="+1">Voltar à página inicial</font>
+		</a>
+	</center>
+	<hr size="5" noshade>
+
+
+</body>
+
+</html>
